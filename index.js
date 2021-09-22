@@ -1,13 +1,11 @@
 const inquirer = require("inquirer");
+const intern = require("./lib/Intern");
+const manager = require("./lib/Manager");
+const engineer = require("./lib/Engineer");
 const fs = require("fs");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
-const Manager = require("./lib/Manager");
 
 
-const naomi = new Manager("Naomi", 1, "ngarcia@2u.com", 101);
 
-console.log(naomi);
 
 /*GIVEN a command-line application that accepts user input
 WHEN I am prompted for my team members and their information
